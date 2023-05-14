@@ -1,0 +1,61 @@
+
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+
+.container-fluid {
+    background-color: $container-background;
+    h1 {
+        color: $h-font-color;
+        font-family: $font-family;
+    }
+    &.projects{
+        background-color: $h-font-color;
+        &>.row{
+            width:80%;
+            margin: 0px auto;
+        }
+    }
+}
+
+ul.nav{
+    color: $h-font-color;
+    li>a{
+        color:$h-font-color;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: $font-family;
+        
+        &.disabled{
+            color:$disabled-text;
+            font-weight: 400;
+        }
+        &.active{
+            font-weight: 700;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+    }
+
+}
+
+.container{
+    width:80%;
+}
+.introText{
+    color:$h-font-color;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: $font-family;
+    text-transform: uppercase;
+}
+
+.col.image{
+    height: 80%;
+}
+
+img{
+    height: 70%;
+}
+
