@@ -6,7 +6,7 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 
 //////////
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub } from '@fortawesome/free-brands-svg-icons'; 
+import { faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub, faInstagram, faLinkedin, faFacebook, faCodepen } from '@fortawesome/free-brands-svg-icons'; 
 
 
 @NgModule({
@@ -23,6 +23,6 @@ import { faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub } from '@fort
 export class SharedModule { 
   constructor(library: FaIconLibrary) {
     // Add an icon to the library for convenient access in other components
-    library.addIcons(faCoffee, faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub);
+    library.addIcons(faCoffee, faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub, faCodepen, faLinkedin, faFacebook);
   }
 }
