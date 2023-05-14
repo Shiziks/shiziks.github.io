@@ -3,12 +3,27 @@ $container-background: #4E3356;
 $h-font-color: #B8EBD0;
 $disabled-text: #A4A5AE;
 $font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 .container-fluid {
     background-color: $container-background;
     h1 {
         color: $h-font-color;
         font-family: $font-family;
+    }
+    &.aboutMe{
+        background-color: $container-background;
+        h2{
+            color: $h-font-color;
+            font-family: $font-family;
+            text-transform:uppercase;
+        }
+
+        .row>.col.whoAmI{
+            border-right:1px solid  $brightest-green;
+
+        }
     }
     &.projects{
         background-color: $h-font-color;
@@ -58,4 +73,96 @@ ul.nav{
 img{
     height: 70%;
 }
+
+.aboutMeText{
+    color: $h-font-color;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    width: 90%;
+    margin:0px auto;
+    line-height: 200%;
+}
+
+//////////////////////////////////////////////////////////
+.wrapper.technologies{
+    width: 90%;
+    margin: 0px auto;
+}
+.technologies>ul {
+	list-style: none;
+	padding: 0;
+    li + li {
+        margin-top: 1rem;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: $h-font-color;
+        font-family: $font-family;
+        color: $container-background;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: calc(100% - 2rem);
+        box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+    }
+ 
+    li>.icons>fa-icon{
+        font-size: 24px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    li>.icons>svg{
+        font-size: 24px;
+        margin-left: 5%;
+        margin-right: 5%;
+        vertical-align: sub;
+    }
+    li>.icons>i{
+        font-size: 24px;
+        padding-top:6px;
+        padding-bottom:6px;
+        margin-left: 5%;
+        margin-right: 5%;
+        vertical-align: sub;
+    }
+    li>.technologyNames{
+
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    
+    // li::before {
+    //     counter-increment: list-item;
+    //     content: counter(list-item);
+    //     font-family: $font-family;
+    //     font-size: 2rem;
+    //     font-weight: 800;
+    //     width: 2em;
+    //     height: 2em;
+    //     background: $container-background;
+    //     flex: 0 0 auto;
+    //     border-radius: 50%;
+    //     color: $brightest-green;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+    
+    li:nth-child(even) {
+        flex-direction: row-reverse;
+        background: $between-purpleandgreen;
+        color: $h-font-color;
+        margin-right: -2rem;
+        margin-left: 2rem;
+    }
+
+}
+
+
+
+
+  
 

@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { LandingPageRoutingModule } from './landing-page-routing.module';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { SharedModule } from '../shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -11,7 +14,9 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
   ],
   imports: [
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule, 
+    SharedModule,
+    FontAwesomeModule
   ],
   exports: [
     LandingPageComponent
