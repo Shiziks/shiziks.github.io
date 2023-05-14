@@ -18,6 +18,8 @@ $between-purpleandgreen: #907F9F;
             color: $h-font-color;
             font-family: $font-family;
             text-transform:uppercase;
+            font-weight: 800;
+            letter-spacing: 0.08em;
         }
 
         .row>.col.whoAmI{
@@ -25,6 +27,62 @@ $between-purpleandgreen: #907F9F;
 
         }
     }
+    &.projects>.row>.col:nth-child(even){
+        .card{
+            background-color: $container-background;
+            color: $h-font-color;
+            border-radius: 1rem;
+            border:none;
+            box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
+            &:hover {
+                transform: scale(1.1);
+                border:none;
+            }
+            img{
+                border-top-right-radius: 1rem;
+                border-top-left-radius: 1rem;
+            }
+            .card-body{
+                font-family: $font-family;
+                .card-title{
+                    text-transform: uppercase;
+                    font-size: 19px;
+                    font-weight: 800;
+                    letter-spacing: 0.07em;
+                }
+                .card-text{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+        }
+    }
+    &.projects>.row>.col:nth-child(odd){
+        .card{
+            background-color: $between-purpleandgreen;
+            color: $h-font-color;
+            border-radius: 1rem;
+            border:none;
+            box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
+            &:hover{
+                transform: scale(1.1);
+                border:none;
+            }
+            img{
+                border-top-right-radius: 1rem;
+                border-top-left-radius: 1rem;
+            }
+            .card-body>.card-title{
+                font-family: $font-family;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 800;
+            }
+
+        }
+    }
+
     &.projects, &.getInTouch{
         background-color: $h-font-color;
         &>.row{
@@ -35,11 +93,14 @@ $between-purpleandgreen: #907F9F;
             color: $container-background;
             text-transform: uppercase;
             font-family: $font-family;
-            font-weight: 700;
+            font-weight: 800;
 
         }
         .row{
-            width: 60%;
+            width: 70%;
+        }
+        .row.getInTouch{
+            width: 50%;
         }
         .row>.col>div>span{
             color: $container-background;
@@ -70,7 +131,7 @@ $between-purpleandgreen: #907F9F;
         font-size: 12px;
         line-height: 150%;
         font-weight: 300;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
 
         .row{
             width: 40%;
@@ -86,9 +147,11 @@ ul.nav{
     color: $h-font-color;
     li>a{
         color:$h-font-color;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         font-family: $font-family;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
         
         &.disabled{
             color:$disabled-text;
@@ -103,15 +166,18 @@ ul.nav{
 
 }
 
+  
+
 .container{
     width:80%;
 }
 .introText{
     color:$h-font-color;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     font-family: $font-family;
     text-transform: uppercase;
+    line-height: 200%;
 }
 
 .col.image{
