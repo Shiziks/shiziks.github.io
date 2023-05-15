@@ -1,12 +1,15 @@
 @use "../landing-page/landing-page.component";
 
+.container{
+    background-color: landing-page.$container-background;
+}
 h1 {
     color: landing-page.$h-font-color;
     font-family: landing-page.$font-family;
 }
 
 .aboutMe {
-    background-color: landing-page.$container-background;
+    //background-color: landing-page.$container-background;
 
     h2 {
         color: landing-page.$h-font-color;
