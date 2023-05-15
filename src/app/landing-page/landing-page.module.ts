@@ -15,6 +15,7 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
     LandingPageComponent,
     IntroSectionComponent,
     ProjectsSectionComponent
+
   ],
   imports: [
     CommonModule,
