@@ -6,13 +6,15 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { SharedModule } from '../shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IntroSectionComponent } from './components/intro-section/intro-section.component';
+import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 
 
 
 @NgModule({
   declarations: [
     LandingPageComponent,
-    IntroSectionComponent
+    IntroSectionComponent,
+    ProjectsSectionComponent
   ],
   imports: [
     CommonModule,

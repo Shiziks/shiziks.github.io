@@ -5,86 +5,10 @@ $font-family: 'Raleway', sans-serif;
 $brightest-green: #8EF5D5;
 $between-purpleandgreen: #907F9F;
 
-.container-fluid {
-    background-color: $container-background;
-
-     &.projects>.row>.col:nth-child(even) {
-        .card {
-            background-color: $container-background;
-            color: $brightest-green;
-            border-radius: 1rem;
-            border: none;
-            box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
-
-            &:hover {
-                transform: scale(1.1);
-                border: none;
-            }
-
-            .card-image {
-                position: relative;
-
-                img {
-                    border-top-right-radius: 1rem;
-                    border-top-left-radius: 1rem;
-                }
-
-            }
 
 
-            .card-body {
-                font-family: $font-family;
 
-                // background-color: $container-background;
-                // border-bottom-left-radius: 1rem;
-                // border-bottom-right-radius: 1rem;
-                // opacity:0.5;
-                .card-title {
-                    text-transform: uppercase;
-                    font-size: 19px;
-                    font-weight: 800;
-                    letter-spacing: 0.07em;
-                }
-
-                .card-text {
-                    font-size: 16px;
-                    font-weight: 400;
-                }
-            }
-
-        }
-    }
-
-    &.projects>.row>.col:nth-child(odd) {
-        .card {
-            background-color: $between-purpleandgreen;
-            color: $brightest-green;
-            border-radius: 1rem;
-            border: none;
-            box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
-
-            &:hover {
-                transform: scale(1.1);
-                border: none;
-            }
-
-            img {
-                border-top-right-radius: 1rem;
-                border-top-left-radius: 1rem;
-            }
-
-            .card-body>.card-title {
-                font-family: $font-family;
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: 800;
-            }
-
-        }
-    }
-
-    &.projects,
-    &.getInTouch {
+    .getInTouch {
         background-color: $h-font-color;
 
         &>.row {
@@ -132,7 +56,7 @@ $between-purpleandgreen: #907F9F;
         }
     }
 
-    &.footer {
+    .footer {
         background-color: $container-background;
         color: $h-font-color;
         font-family: $font-family;
@@ -149,7 +73,7 @@ $between-purpleandgreen: #907F9F;
                 font-size: 24px;
             }
         }
-    }
+    
 }
 
 
