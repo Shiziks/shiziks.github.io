@@ -43,9 +43,10 @@
     }
     
     .technologies>ul {
+        width: 85%;
         list-style: none;
         padding-left: 0px;
-        margin-left:3em;
+        margin-left:4em;
 
         li+li {
             margin-top: 1rem;

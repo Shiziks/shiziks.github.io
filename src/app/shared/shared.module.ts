@@ -8,13 +8,13 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub, faInstagram, faLinkedin, faFacebook, faCodepen } from '@fortawesome/free-brands-svg-icons';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { FooterComponent } from './components/footer/footer.component'; 
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   exports: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent, 
   ]
 })
 export class SharedModule { 

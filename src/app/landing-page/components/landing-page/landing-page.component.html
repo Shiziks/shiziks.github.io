@@ -1,10 +1,26 @@
 
 <app-nav-bar></app-nav-bar>
-<app-intro-section></app-intro-section>
 
-<app-projects-section></app-projects-section>
-<app-about-me-section></app-about-me-section>
-<app-getintouch-section></app-getintouch-section>
+<div class="section" #home id="home">
+    <app-intro-section></app-intro-section>
+</div>
+<div class="section" #projects id="projects">
+    <app-projects-section></app-projects-section>
+</div>
+<div class="section" #aboutme id="aboutme">
+    <app-about-me-section></app-about-me-section>
+</div>
+<div class="section" #getintouch id="getintouch">
+    <app-getintouch-section></app-getintouch-section>
+</div>
+
 <app-footer></app-footer>
+
+<div class="arrow" *ngIf="isShow" (click)="gotoTop()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<!-- <button *ngIf="isShow" (click)="gotoTop()">👆</button> -->
 
 
