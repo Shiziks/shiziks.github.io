@@ -1,5 +1,8 @@
 @use '../../../landing-page/components/landing-page/landing-page.component';
 
+.container-fluid{
+    background-color: landing-page.$container-background;
+}
 ul.nav {
     color: landing-page.$h-font-color;
 

@@ -1,23 +1,63 @@
 @use "../landing-page/landing-page.component";
 
-h1 {
-    color: landing-page.$h-font-color;
-    font-family: landing-page.$font-family;
-}
-
-.aboutMe {
+.container-fluid {
     background-color: landing-page.$container-background;
 
-    h2 {
+
+    h1 {
         color: landing-page.$h-font-color;
         font-family: landing-page.$font-family;
+    }
+
+    .row.introduction{
+        width: 85%;
+        margin:0px auto;
+    }
+
+
+    .introText {
+        color: landing-page.$h-font-color;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: landing-page.$font-family;
         text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 0.08em;
+        line-height: 200%;
     }
 
-    .row>.col.whoAmI {
-        border-right: 1px solid landing-page.$brightest-green;
-
+    .col.image {
+        height: 80%;
     }
+
+    img {
+        height: 70%;
+    }
+
+    .aboutMeText {
+        color: landing-page.$h-font-color;
+        font-family: landing-page.$font-family;
+        font-weight: 400;
+        font-size: 18px;
+        width: 90%;
+        margin: 0px auto;
+        line-height: 220%;
+    }
+
+
+    .aboutMe {
+        //background-color: landing-page.$container-background;
+
+        h2 {
+            color: landing-page.$h-font-color;
+            font-family: landing-page.$font-family;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+
+        .row>.col.whoAmI {
+            border-right: 1px solid landing-page.$brightest-green;
+
+        }
+    }
+
 }
