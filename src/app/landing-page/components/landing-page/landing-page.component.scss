@@ -174,30 +174,7 @@ $between-purpleandgreen: #907F9F;
     }
 }
 
-ul.nav {
-    color: $h-font-color;
 
-    li>a {
-        color: $h-font-color;
-        font-weight: 600;
-        font-size: 16px;
-        font-family: $font-family;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-
-        &.disabled {
-            color: $disabled-text;
-            font-weight: 400;
-        }
-
-        &.active {
-            font-weight: 700;
-            text-decoration: underline;
-            font-size: 17px;
-        }
-    }
-
-}
 
 
 
