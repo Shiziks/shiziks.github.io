@@ -8,29 +8,7 @@ $between-purpleandgreen: #907F9F;
 .container-fluid {
     background-color: $container-background;
 
-    h1 {
-        color: $h-font-color;
-        font-family: $font-family;
-    }
-
-    &.aboutMe {
-        background-color: $container-background;
-
-        h2 {
-            color: $h-font-color;
-            font-family: $font-family;
-            text-transform: uppercase;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-        }
-
-        .row>.col.whoAmI {
-            border-right: 1px solid $brightest-green;
-
-        }
-    }
-
-    &.projects>.row>.col:nth-child(even) {
+     &.projects>.row>.col:nth-child(even) {
         .card {
             background-color: $container-background;
             color: $brightest-green;
