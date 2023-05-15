@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IntroSectionComponent } from './components/intro-section/intro-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { AboutMeSectionComponent } from './components/about-me-section/about-me-section.component';
+import { GetintouchSectionComponent } from './components/getintouch-section/getintouch-section.component';
 
 
 
@@ -16,7 +17,8 @@ import { AboutMeSectionComponent } from './components/about-me-section/about-me-
     LandingPageComponent,
     IntroSectionComponent,
     ProjectsSectionComponent,
-    AboutMeSectionComponent
+    AboutMeSectionComponent,
+    GetintouchSectionComponent
 
   ],
   imports: [
