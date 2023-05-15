@@ -3,49 +3,48 @@
 .container-fluid {
     background-color: landing-page.$h-font-color;
 
+    &>.row {
+        width: 80%;
+        margin: 0px auto;
+    }
 
-        &>.row {
-            width: 80%;
-            margin: 0px auto;
-        }
+    h2 {
+        color: landing-page.$container-background;
+        text-transform: uppercase;
+        font-family: landing-page.$font-family;
+        font-weight: 800;
 
-        h2 {
-            color: landing-page.$container-background;
-            text-transform: uppercase;
-            font-family: landing-page.$font-family;
-            font-weight: 800;
+    }
 
-        }
+    .row {
+        width: 70%;
+    }
 
-        .row {
-            width: 70%;
-        }
+    .row.getInTouch {
+        width: 50%;
+    }
 
-        .row.getInTouch {
-            width: 50%;
-        }
+    .row>.col>div>span {
+        color: landing-page.$container-background;
+        font-size: 18px;
+        justify-content: center;
+        font-family: landing-page.$font-family;
+        line-height: 220%;
+    }
 
-        .row>.col>div>span {
-            color: landing-page.$container-background;
-            font-size: 18px;
-            justify-content: center;
-            font-family: landing-page.$font-family;
-            line-height: 220%;
-        }
+    .row>.col>.btn {
+        background-color: landing-page.$between-purpleandgreen;
+        font-family: landing-page.$font-family;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: landing-page.$h-font-color;
+        border-radius: 1rem;
+        border: none;
+        width: 30%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        box-shadow: rgba(49, 32, 54, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
 
-        .row>.col>.btn {
-            background-color: landing-page.$between-purpleandgreen;
-            font-family: landing-page.$font-family;
-            text-transform: uppercase;
-            font-size: 18px;
-            font-weight: 700;
-            color: landing-page.$h-font-color;
-            border-radius: 1rem;
-            border: none;
-            width: 30%;
-            padding-top: 1.5%;
-            padding-bottom: 1.5%;
-            box-shadow: rgba(49, 32, 54, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        }
-    
 }
