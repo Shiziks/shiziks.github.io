@@ -1,0 +1,38 @@
+@use "../landing-page/landing-page.component";
+
+.container-fluid {
+    background-color: landing-page.$container-background;
+
+
+    // h1 {
+    //     color: landing-page.$h-font-color;
+    //     font-family: landing-page.$font-family;
+    // }
+
+    .aboutMeRow {
+        width: 95%;
+        margin:0px auto;
+
+        h2 {
+            color: landing-page.$h-font-color;
+            font-family: landing-page.$font-family;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+        .aboutMeText {
+            color: landing-page.$h-font-color;
+            font-family: landing-page.$font-family;
+            font-weight: 400;
+            font-size: 18px;
+            width: 90%;
+            margin: 0px auto;
+            line-height: 220%;
+        }
+
+        .whoAmI {
+            border-right: 1px solid landing-page.$brightest-green;
+
+        }
+    }
+}

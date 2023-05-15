@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IntroSectionComponent } from './components/intro-section/intro-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { AboutMeSectionComponent } from './components/about-me-section/about-me-section.component';
 
 
 
@@ -14,7 +15,8 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
   declarations: [
     LandingPageComponent,
     IntroSectionComponent,
-    ProjectsSectionComponent
+    ProjectsSectionComponent,
+    AboutMeSectionComponent
 
   ],
   imports: [
@@ -26,7 +28,8 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
   exports: [
     LandingPageComponent,
     IntroSectionComponent,
-    ProjectsSectionComponent
+    ProjectsSectionComponent, 
+    AboutMeSectionComponent
   ]
 })
 export class LandingPageModule { }
