@@ -23,7 +23,9 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
     FontAwesomeModule
   ],
   exports: [
-    LandingPageComponent
+    LandingPageComponent,
+    IntroSectionComponent,
+    ProjectsSectionComponent
   ]
 })
 export class LandingPageModule { }
