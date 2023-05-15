@@ -10,7 +10,7 @@
     // }
 
     .aboutMeRow {
-        width: 95%;
+        width: 100%;
         margin:0px auto;
 
         h2 {
@@ -28,11 +28,87 @@
             width: 90%;
             margin: 0px auto;
             line-height: 220%;
+            text-align: justify;
         }
 
         .whoAmI {
             border-right: 1px solid landing-page.$brightest-green;
 
+        }
+    }
+    .wrapper.technologies {
+        //width: 90%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    
+    .technologies>ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-left:3em;
+
+        li+li {
+            margin-top: 1rem;
+
+        }
+    
+        li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: landing-page.$h-font-color;
+            font-family: landing-page.$font-family;
+            color: landing-page.$container-background;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            width: calc(100% - 5rem);
+            box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+            &:hover {
+                transform: scale(1.1);
+                border: none;
+            }
+        }
+    
+        li>.icons>fa-icon {
+            font-size: 24px;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    
+        li>.icons>svg {
+            font-size: 24px;
+            padding-left: 5%;
+            padding-right: 5%;
+            vertical-align: sub;
+        }
+    
+        li>.icons>i {
+            font-size: 24px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 5%;
+            padding-right: 5%;
+            vertical-align: sub;
+        }
+    
+        li>.technologyNames {
+    
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    
+        li:nth-child(even) {
+            flex-direction: row-reverse;
+            background: landing-page.$between-purpleandgreen;
+            color: landing-page.$h-font-color;
+            margin-right: 0rem;
+            margin-left: 3rem;
+        }
+
+        li:nth-child(odd) {
+            margin-right: 3rem;
+            margin-left: 0rem;
         }
     }
 }

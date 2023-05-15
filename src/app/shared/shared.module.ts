@@ -7,12 +7,14 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 //////////
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faAngular, faJs, faPhp, faCss3, faSass, faGithub, faInstagram, faLinkedin, faFacebook, faCodepen } from '@fortawesome/free-brands-svg-icons';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component'; 
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component'; 
 
 
 @NgModule({
   declarations: [
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     FontAwesomeModule
   ],
   exports: [
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { 

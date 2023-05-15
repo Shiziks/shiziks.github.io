@@ -1,0 +1,21 @@
+@use "../../../landing-page/components/landing-page/landing-page.component";
+
+.container-fluid.footer {
+    background-color: landing-page.$container-background;
+    color: landing-page.$h-font-color;
+    font-family: landing-page.$font-family;
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+
+    .row {
+        width: 40%;
+        margin: 0px auto;
+
+        .col>.footerIcons>.row>.col>fa-icon {
+            font-size: 24px;
+        }
+    }
+
+}
