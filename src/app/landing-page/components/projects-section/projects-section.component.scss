@@ -14,8 +14,8 @@
             color: landing-page.$brightest-green;
             border-radius: 1rem;
             border: none;
-            box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
-
+            //box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
+            box-shadow: 0 10px 30px -15px landing-page.$container-background;
             &:hover {
                 transform: scale(1.1);
                 border: none;
@@ -61,8 +61,8 @@
             color: landing-page.$brightest-green;
             border-radius: 1rem;
             border: none;
-            box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
-
+            //box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
+            box-shadow: 0 10px 30px -15px landing-page.$container-background;
             &:hover {
                 transform: scale(1.1);
                 border: none;

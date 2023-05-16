@@ -9,6 +9,7 @@ import { IntroSectionComponent } from './components/intro-section/intro-section.
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { AboutMeSectionComponent } from './components/about-me-section/about-me-section.component';
 import { GetintouchSectionComponent } from './components/getintouch-section/getintouch-section.component';
+import { ProjectComponent } from './components/project/project.component';
 
 
 
@@ -18,7 +19,8 @@ import { GetintouchSectionComponent } from './components/getintouch-section/geti
     IntroSectionComponent,
     ProjectsSectionComponent,
     AboutMeSectionComponent,
-    GetintouchSectionComponent
+    GetintouchSectionComponent,
+    ProjectComponent
 
   ],
   imports: [
@@ -31,7 +33,8 @@ import { GetintouchSectionComponent } from './components/getintouch-section/geti
     LandingPageComponent,
     IntroSectionComponent,
     ProjectsSectionComponent, 
-    AboutMeSectionComponent
+    AboutMeSectionComponent,
+    ProjectComponent
   ]
 })
 export class LandingPageModule { }
