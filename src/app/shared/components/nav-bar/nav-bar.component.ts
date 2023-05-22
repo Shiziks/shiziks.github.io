@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 
 @Component({
@@ -8,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  lpVal!:boolean;
+
+  constructor(private router:Router) {
+  }
 
   ngOnInit(): void {
+
+   this.router.events.subscribe((event) => {
+   if (event instanceof NavigationEnd) {
+    console.log(event.url);
+    event.url=='/project'?this.lpVal=false:this.lpVal=true;
   }
+  });
+
+  }
+
+
+
+  
+
+ 
 
 }

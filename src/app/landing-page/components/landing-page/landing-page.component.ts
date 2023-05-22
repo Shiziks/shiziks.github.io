@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, EventEmitter, HostListener, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -15,6 +15,8 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
   @HostListener('window:scroll')
   checkScroll() {
       
@@ -23,7 +25,7 @@ export class LandingPageComponent implements OnInit {
 
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-    console.log('[scroll]', scrollPosition);
+    //console.log('[scroll]', scrollPosition);
     
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;

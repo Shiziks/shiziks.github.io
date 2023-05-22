@@ -2,12 +2,21 @@
 
 .container-fluid{
     background-color: landing-page.$container-background;
+    .navigation>ul.nav>li>a{
+        color: landing-page.$h-font-color;
+    }
+}
+.container-fluid.project{
+    background-color: landing-page.$h-font-color;
+    .navigation>ul.nav>li>a{
+    color: landing-page.$container-background;
+    font-weight: 800;
+    }
 }
 ul.nav {
     color: landing-page.$h-font-color;
 
     li>a {
-        color: landing-page.$h-font-color;
         font-weight: 600;
         font-size: 16px;
         font-family: landing-page.$font-family;

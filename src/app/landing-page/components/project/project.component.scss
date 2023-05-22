@@ -1,11 +1,15 @@
 @use "../landing-page/landing-page.component";
 
+*{
+    font-family: landing-page.$font-family;
+}
+
 .container-fluid {
     background-color: landing-page.$h-font-color;
     align-items: center;
     text-align: center;
 
-    .row {
+    .row.intro {
         margin: 0px auto;
         width: 80%;
         position: relative;
@@ -14,6 +18,7 @@
         grid-template-columns: repeat(12, 1fr);
         -webkit-box-align: center;
         align-items: center;
+        border-bottom:none;
 
         .project-description {
             position: relative;
@@ -74,7 +79,7 @@
 
             img {
                 box-shadow: 0 10px 30px -15px landing-page.$container-background;
-                border-radius: var(--border-radius);
+                border-radius: 1em;
                 mix-blend-mode: multiply;
                 filter: grayscale(100%) contrast(1) brightness(90%);
                 bottom: 0;
@@ -91,6 +96,30 @@
             }
         }
     }
+
+    .row {
+        // background-color: landing-page.$container-background;
+        // border-radius: 2em;
+        //border-bottom: 1px solid landing-page.$container-background;
+        
+        .text{
+            color: #8D5A97;
+            font-family: landing-page.$font-family;
+            line-height:170%;
+        }
+        h2.infotitle{
+            text-transform: uppercase;
+            color: #8D5A97; 
+            font-weight: 800;   
+        }
+        
+        
+        .image1 img{
+            border-radius: 2em;
+            box-shadow: 0 10px 30px -15px #4E3356;
+        }
+    }
+    
 
 
 }
