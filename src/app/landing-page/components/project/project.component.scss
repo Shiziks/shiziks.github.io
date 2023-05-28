@@ -188,7 +188,6 @@ $between-purpleandgreen: #907F9F;
 
             .project-text {
                 box-shadow: 0 10px 30px -15px $container-background;
-                transition: var(--transition);
                 position: relative;
                 z-index: 2;
                 padding: 25px;
@@ -223,25 +222,19 @@ $between-purpleandgreen: #907F9F;
 
             &.animate{
                 animation: slide-in-left 1.5s forwards, fade-in 3.2s forwards !important;
-            -webkit-animation: slide-in-left 1.5s forwards, fade-in 3.2s forwards !important;
+                -webkit-animation: slide-in-left 1.5s forwards, fade-in 3.2s forwards !important;
             }
 
 
-            a>img {
-                //border-radius: 1em;
-                mix-blend-mode: multiply;
+            .topImage {
                 filter: grayscale(100%) contrast(1) brightness(180%);
-                //bottom: 0;
-                //left: 0;
                 margin: 0;
-                //max-width: none;
                 padding: 0;
-                position: absolute;
-                //right: 0;
-                //top: 0;
-                //width: 100%;
                 object-fit: cover;
-                transition: all 1s ease-in-out;
+                transition: all 0.7s linear;
+                --o-transition       : all 0.7s linear;
+                --moz-transition     : all 0.7s linear;
+                --webkit-transition  : all 0.7s linear;
                 z-index: 2;
 
                 &:hover {
