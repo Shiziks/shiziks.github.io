@@ -1,9 +1,14 @@
-@use "../../../landing-page/components/landing-page/landing-page.component";
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 .container-fluid.footer {
-    background-color: landing-page.$container-background;
-    color: landing-page.$h-font-color;
-    font-family: landing-page.$font-family;
+    background-color: $container-background;
+    color: $h-font-color;
+    font-family: $font-family;
     font-size: 12px;
     line-height: 150%;
     font-weight: 300;

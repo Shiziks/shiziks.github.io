@@ -1,7 +1,12 @@
-@use "../landing-page/landing-page.component";
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 .container-fluid {
-    background-color: landing-page.$h-font-color;
+    background-color: $h-font-color;
 
     &>.row {
         width: 80%;
@@ -9,9 +14,9 @@
     }
 
     h2 {
-        color: landing-page.$container-background;
+        color: $container-background;
         text-transform: uppercase;
-        font-family: landing-page.$font-family;
+        font-family: $font-family;
         font-weight: 800;
 
     }
@@ -25,10 +30,10 @@
     }
 
     .row>.col>div>span {
-        color: landing-page.$container-background;
+        color: $container-background;
         font-size: 18px;
         justify-content: center;
-        font-family: landing-page.$font-family;
+        font-family: $font-family;
         line-height: 220%;
     }
 
@@ -57,12 +62,12 @@
     }
 
     .row>.col>.btn {
-        background-color: landing-page.$between-purpleandgreen;
-        font-family: landing-page.$font-family;
+        background-color: $between-purpleandgreen;
+        font-family: $font-family;
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 700;
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
         border-radius: 2rem;
         border: none;
         width: 35%;

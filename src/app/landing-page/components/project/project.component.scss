@@ -1,9 +1,14 @@
-@use "../landing-page/landing-page.component";
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 * {
-    font-family: landing-page.$font-family;
+    font-family: $font-family;
     body{
-        background-color: landing-page.$h-font-color;
+        background-color: $h-font-color;
     }
 }
 
@@ -101,7 +106,7 @@
 }
 
 .container-fluid {
-    background-color: landing-page.$h-font-color;
+    background-color: $h-font-color;
     align-items: center;
     text-align: center;
 
@@ -126,18 +131,17 @@
 
 
             .project-title {
-                box-shadow: 0 10px 30px -15px landing-page.$container-background;
-                transition: var(--transition);
+                box-shadow: 0 10px 30px -15px $container-background;
                 position: relative;
                 z-index: 2;
                 padding: 25px;
                 border-radius: 1em;
                 background-color: #8D5A97;
-                color: landing-page.$h-font-color;
+                color: $h-font-color;
                 font-size: 14px;
 
                 h1.title {
-                    color: landing-page.$h-font-color;
+                    color: $h-font-color;
                     text-transform: uppercase;
                     font-weight: 800;
                     margin-bottom: 0px;
@@ -160,7 +164,7 @@
                 li {
                     margin: 0px 0px 5px 20px;
                     color:#8D5A97;
-                    font-family: landing-page.$font-family;
+                    font-family: $font-family;
                     font-size: 14px;
                     white-space: nowrap;
                 }
@@ -183,14 +187,14 @@
 
 
             .project-text {
-                box-shadow: 0 10px 30px -15px landing-page.$container-background;
+                box-shadow: 0 10px 30px -15px $container-background;
                 transition: var(--transition);
                 position: relative;
                 z-index: 2;
                 padding: 25px;
                 border-radius: 1em;
-                background-color: landing-page.$container-background;
-                color: landing-page.$h-font-color;
+                background-color: $container-background;
+                color: $h-font-color;
                 font-size: 14px;
             }
 
@@ -207,23 +211,10 @@
         }
 
 
-        // .gatsby-image-wrapper.gatsby-image-wrapper-constrained.img {
-        //     background-color: rgb(184, 235, 208 , 75%);
-        //     border-radius: 1em;
-        //     transition: background-color 0.7s ease;
-
-            // &:hover {
-            //     background-color: transparent;
-            // }
-
-
-
-        //}
-
         .project-image {
             padding:0px;
             overflow: hidden;
-            box-shadow: 0 10px 30px -15px landing-page.$container-background;
+            box-shadow: 0 10px 30px -15px $container-background;
             border-radius: 1em;
             grid-area: 1 / 6 / -1 / -1;
             position: relative;
@@ -234,13 +225,7 @@
                 animation: slide-in-left 1.5s forwards, fade-in 3.2s forwards !important;
             -webkit-animation: slide-in-left 1.5s forwards, fade-in 3.2s forwards !important;
             }
-            // a {
-            //     display: inline-block;
-            //     text-decoration: none;
-            //     text-decoration-skip-ink: auto;
-            //     color: inherit;
-            //     position: relative;
-            // }
+
 
             a>img {
                 //border-radius: 1em;
@@ -275,7 +260,7 @@
 
         .text {
             color: #8D5A97;
-            font-family: landing-page.$font-family;
+            font-family: $font-family;
             line-height: 155%;
         }
 
@@ -409,7 +394,7 @@
 
     .row.firstDescription {
         color: #8D5A97;
-        font: landing-page.$font-family;
+        font: $font-family;
         width: 90%;
         margin: 0px auto;
 
@@ -440,7 +425,7 @@
         -webkit-box-align: center;
         align-items: center;
         position: relative;
-        color: landing-page.$container-background;
+        color: $container-background;
 
         a {
             color: #8D5A97;

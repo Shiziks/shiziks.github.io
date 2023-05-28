@@ -1,8 +1,13 @@
-@use '../../../landing-page/components/landing-page/landing-page.component';
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 @keyframes color-change {
     0% {
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
     }
 
     50% {
@@ -10,7 +15,7 @@
     }
 
     100% {
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
 
     }
 }
@@ -19,10 +24,10 @@
     padding: 0px;
 
     .container-fluid {
-        background-color: landing-page.$container-background;
+        background-color: $container-background;
 
         .navigation>ul.nav>li>a {
-            color: landing-page.$h-font-color;
+            color: $h-font-color;
             cursor: pointer;
             transition: color 0.7s ease-in-out;
             &:hover{
@@ -32,7 +37,7 @@
     }
 
     .navbar-brand {
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
         font-weight: 800;
         font-size: 3em;
         animation: color-change 4s infinite;
@@ -41,11 +46,11 @@
 }
 
 .container-fluid.project {
-    background-color: landing-page.$h-font-color !important;
+    background-color: $h-font-color !important;
     z-index:1;
 
     .navigation>ul.nav>li>a {
-        color: landing-page.$container-background !important;
+        color: $container-background !important;
         font-weight: 800;
         border-radius: 0.7em;
         text-decoration: none;
@@ -78,18 +83,18 @@
 }
 
 ul.nav {
-    color: landing-page.$h-font-color;
+    color: $h-font-color;
 
     li>a {
         font-weight: 600;
         font-size: 16px;
-        font-family: landing-page.$font-family;
+        font-family: $font-family;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         text-decoration: none;
 
         &.disabled {
-            color: landing-page.$disabled-text;
+            color: $disabled-text;
             font-weight: 400;
         }
 

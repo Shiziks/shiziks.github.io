@@ -1,7 +1,12 @@
-@use "../landing-page/landing-page.component";
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 .container-fluid {
-    background-color: landing-page.$container-background;
+    background-color: $container-background;
 
 
     // h1 {
@@ -14,16 +19,16 @@
         margin: 0px auto;
 
         h2 {
-            color: landing-page.$h-font-color;
-            font-family: landing-page.$font-family;
+            color: $h-font-color;
+            font-family: $font-family;
             text-transform: uppercase;
             font-weight: 800;
             letter-spacing: 0.08em;
         }
 
         .aboutMeText {
-            color: landing-page.$h-font-color;
-            font-family: landing-page.$font-family;
+            color: $h-font-color;
+            font-family: $font-family;
             font-weight: 400;
             font-size: 18px;
             width: 90%;
@@ -33,7 +38,7 @@
         }
 
         .whoAmI {
-            border-right: 1px solid landing-page.$brightest-green;
+            border-right: 1px solid $brightest-green;
 
         }
     }
@@ -59,9 +64,9 @@
             display: flex;
             align-items: center;
             gap: 1rem;
-            background: landing-page.$h-font-color;
-            font-family: landing-page.$font-family;
-            color: landing-page.$container-background;
+            background: $h-font-color;
+            font-family: $font-family;
+            color: $container-background;
             padding: 0.5rem;
             border-radius: 1rem;
             width: calc(100% - 5rem);
@@ -104,8 +109,8 @@
 
         li:nth-child(even) {
             flex-direction: row-reverse;
-            background: landing-page.$between-purpleandgreen;
-            color: landing-page.$h-font-color;
+            background: $between-purpleandgreen;
+            color: $h-font-color;
             margin-right: 0rem;
             margin-left: 3rem;
         }
@@ -137,7 +142,7 @@
     }
     100% {
         transform: scale(1.1);
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
     }
 }
 
@@ -149,7 +154,7 @@
     100% {
         transform: scale(1.1);
         font-size: 12px;
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
     }
 }
 
@@ -167,8 +172,8 @@
 }
 
 h2 {
-    color: landing-page.$h-font-color;
-    font-family: landing-page.$font-family;
+    color: $h-font-color;
+    font-family: $font-family;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.08em;

@@ -1,7 +1,12 @@
-@use "../landing-page/landing-page.component";
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 .container-fluid {
-    background-color: landing-page.$container-background;
+    background-color: $container-background;
 
     @keyframes slide-in {
         0% {
@@ -62,8 +67,8 @@
     
 
     h1 {
-        color: landing-page.$h-font-color;
-        font-family: landing-page.$font-family;
+        color: $h-font-color;
+        font-family: $font-family;
         text-transform: uppercase;
         font-weight: 800;
         letter-spacing: 3px;
@@ -78,10 +83,10 @@
 
 
     .introText {
-        color: landing-page.$h-font-color;
+        color: $h-font-color;
         font-weight: 400;
         font-size: 20px;
-        font-family: landing-page.$font-family;
+        font-family: $font-family;
         text-transform: uppercase;
         line-height: 200%;
         text-align: justify;

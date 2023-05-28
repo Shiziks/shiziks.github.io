@@ -1,4 +1,9 @@
-@use "../../../landing-page/components/landing-page/landing-page.component";
+$container-background: #4E3356;
+$h-font-color: #B8EBD0;
+$disabled-text: #A4A5AE;
+$font-family: 'Raleway', sans-serif;
+$brightest-green: #8EF5D5;
+$between-purpleandgreen: #907F9F;
 
 @keyframes scalebutton {
     0% {
@@ -33,26 +38,26 @@
 
         .col {
             h1 {
-                font-family: landing-page.$font-family;
+                font-family: $font-family;
                 font-weight: 800;
                 font-size: 10vh;
-                color: landing-page.$container-background;
+                color: $container-background;
             }
 
             .message>small {
-                font-family: landing-page.$font-family;
-                color: landing-page.$container-background;
+                font-family: $font-family;
+                color: $container-background;
                 text-transform: uppercase;
 
             }
 
             .btn {
-                background-color: landing-page.$between-purpleandgreen;
-                font-family: landing-page.$font-family;
+                background-color: $between-purpleandgreen;
+                font-family: $font-family;
                 text-transform: uppercase;
                 font-size: 18px;
                 font-weight: 700;
-                color: landing-page.$h-font-color;
+                color: $h-font-color;
                 border-radius: 2rem;
                 border: none;
                 width: 80%;
