@@ -16,8 +16,9 @@
             border: none;
             //box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
             box-shadow: 0 10px 30px -15px landing-page.$container-background;
+            transition: all 0.7s ease-in-out;
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.07);
                 border: none;
             }
 
@@ -63,8 +64,9 @@
             border: none;
             //box-shadow: rgba(49, 32, 54, 0.19) 0px 10px 20px, rgba(49, 32, 54, 0.23) 0px 6px 6px;
             box-shadow: 0 10px 30px -15px landing-page.$container-background;
+            transition: all 0.7s ease-in-out;
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.07);
                 border: none;
             }
 

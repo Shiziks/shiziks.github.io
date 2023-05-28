@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
@@ -11,7 +12,7 @@ export class NavBarComponent implements OnInit {
 
   lpVal!:boolean;
 
-  constructor(private router:Router) {
+  constructor(private router:Router, private scroller: ViewportScroller) {
   }
 
   ngOnInit(): void {
@@ -23,6 +24,10 @@ export class NavBarComponent implements OnInit {
   }
   });
 
+  }
+
+  scroll(target:string){
+    this.scroller.scrollToAnchor(target);
   }
 
 

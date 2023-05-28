@@ -1,0 +1,78 @@
+@use "../../../landing-page/components/landing-page/landing-page.component";
+
+@keyframes scalebutton {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+        font-size: 20px;
+        -webkit-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+        -moz-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+        box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+    }
+}
+@keyframes scaledownbutton {
+    0% {
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+
+    100% {
+        transform: scale(1.0);
+        font-size: 18px;
+    }
+}
+
+.container {
+    min-height: 100vh;
+
+    .row {
+        margin: 0px auto;
+        align-items: center;
+
+        .col {
+            h1 {
+                font-family: landing-page.$font-family;
+                font-weight: 800;
+                font-size: 10vh;
+                color: landing-page.$container-background;
+            }
+
+            .message>small {
+                font-family: landing-page.$font-family;
+                color: landing-page.$container-background;
+                text-transform: uppercase;
+
+            }
+
+            .btn {
+                background-color: landing-page.$between-purpleandgreen;
+                font-family: landing-page.$font-family;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 700;
+                color: landing-page.$h-font-color;
+                border-radius: 2rem;
+                border: none;
+                width: 80%;
+                box-shadow: rgba(49, 32, 54, 0.15) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                -webkit-animation: scaledownbutton 0.3s linear;
+                -moz-animation: scaledownbutton 0.3s linear;
+                animation: scaledownbutton 0.3s linear;
+                transform-origin: 50% 50%;
+                animation-fill-mode: forwards;
+
+                &:hover {
+                    z-index: 100;
+                    -webkit-animation: scalebutton 0.3s linear;
+                    -moz-animation: scalebutton 0.3s linear;
+                    animation: scalebutton 0.3s linear;
+                    transform-origin: 50% 50%;
+                    animation-fill-mode: forwards;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

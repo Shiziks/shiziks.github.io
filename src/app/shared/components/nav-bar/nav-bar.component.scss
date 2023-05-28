@@ -1,18 +1,82 @@
 @use '../../../landing-page/components/landing-page/landing-page.component';
 
-.container-fluid{
-    background-color: landing-page.$container-background;
-    .navigation>ul.nav>li>a{
+@keyframes color-change {
+    0% {
         color: landing-page.$h-font-color;
     }
-}
-.container-fluid.project{
-    background-color: landing-page.$h-font-color;
-    .navigation>ul.nav>li>a{
-    color: landing-page.$container-background;
-    font-weight: 800;
+
+    50% {
+        color: #AA80B3;
+    }
+
+    100% {
+        color: landing-page.$h-font-color;
+
     }
 }
+
+.navbar {
+    padding: 0px;
+
+    .container-fluid {
+        background-color: landing-page.$container-background;
+
+        .navigation>ul.nav>li>a {
+            color: landing-page.$h-font-color;
+            cursor: pointer;
+            transition: color 0.7s ease-in-out;
+            &:hover{
+                color:#AA80B3;
+            }
+        }
+    }
+
+    .navbar-brand {
+        color: landing-page.$h-font-color;
+        font-weight: 800;
+        font-size: 3em;
+        animation: color-change 4s infinite;
+        animation-iteration-count: infinite;
+    }
+}
+
+.container-fluid.project {
+    background-color: landing-page.$h-font-color !important;
+    z-index:1;
+
+    .navigation>ul.nav>li>a {
+        color: landing-page.$container-background !important;
+        font-weight: 800;
+        border-radius: 0.7em;
+        text-decoration: none;
+        position:relative ;
+        transition: color 0.7s ease-in-out;
+        &:hover{
+            &:before{
+                width: 100%;
+                background-color: rgba(#8E5C99,0.7);
+                box-shadow: rgba(81, 53, 90, 0.3) 0px 1px 2px 0px, rgba(81, 53, 90, 0.15) 0px 2px 6px 2px;            
+            }
+            color:#AA80B3!important;
+        }
+    }
+    .navigation>ul.nav>li>a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 28px;
+        background-color: rgba(#8E5C99,0.4);
+        width: 40px;
+        height: 40px;
+        transition: all .5s ease;
+        z-index: -1;
+        
+    }
+
+}
+
 ul.nav {
     color: landing-page.$h-font-color;
 
@@ -22,6 +86,7 @@ ul.nav {
         font-family: landing-page.$font-family;
         text-transform: uppercase;
         letter-spacing: 0.08em;
+        text-decoration: none;
 
         &.disabled {
             color: landing-page.$disabled-text;

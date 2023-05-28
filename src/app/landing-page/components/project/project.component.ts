@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectComponent implements OnInit {
 
   landingPage:boolean=false;
+  animate=false;
 
   constructor() { 
   }
 
   ngOnInit(): void {
+    this.animate=true;
+    setTimeout(()=>{this.animate=false},2000);
     
   }
 
