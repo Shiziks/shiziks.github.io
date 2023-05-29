@@ -11,6 +11,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class NavBarComponent implements OnInit {
 
   lpVal!:boolean;
+  active:string="home";
 
   constructor(private router:Router, private scroller: ViewportScroller) {
   }
@@ -27,7 +28,13 @@ export class NavBarComponent implements OnInit {
   }
 
   scroll(target:string){
-    this.scroller.scrollToAnchor(target);
+    if(target=='home'){
+      this.active=target;
+    }
+    else{
+      this.active=target;
+      this.scroller.scrollToAnchor(target);
+    }
   }
 
 
