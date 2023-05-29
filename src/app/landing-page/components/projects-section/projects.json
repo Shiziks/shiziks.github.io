@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "cardTitle": "Portfolio project",
+            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
+            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
+            "link": "/project/portfolio"
+        },
+        {
+            "cardTitle": "Portfolio project",
+            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
+            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
+            "link": "/project/portfolio"
+        },
+        {
+            "cardTitle": "Portfolio project",
+            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
+            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
+            "link": "/project/portfolio"
+        },
+        {
+            "cardTitle": "Portfolio project",
+            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
+            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
+            "link": "/project/portfolio"
+        },
+        {
+            "cardTitle": "Portfolio project",
+            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.", 
+            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
+            "link": "/project/portfolio"
+        }
+    ]
+}

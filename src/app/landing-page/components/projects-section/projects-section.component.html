@@ -1,6 +1,18 @@
 <div class="container-fluid projects pt-5 pb-5" #projects>
     <div class="row row-cols-1 row-cols-md-3 g-5 text-center mb-5">
-        <div class="col">
+        <ng-container *ngFor="let project of projs; index as i">
+                <div class="col">
+                    <div class="card h-100" routerLink={{project.link}}>
+                        <img src={{project.cardImage}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">{{project.cardTitle}}</h5>
+                            <p class="card-text mb-3">{{project.cardText}}</p>
+                        </div>
+                    </div>
+                </div>
+
+        </ng-container>
+        <!-- <div class="col">
             <div class="card h-100" routerLink="/project">
                 <img src="../../../../assets/images/pr1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -9,8 +21,8 @@
                         additional content. This content is a little bit longer.</p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+        </div> -->
+        <!-- <div class="col">
             <div class="card h-100" routerLink="/project">
                 <img src="../../../../assets/images/pr2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -18,11 +30,11 @@
                     <p class="card-text mb-3">This is a short card.</p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+        </div> -->
+        <!-- <div class="col">
             <div class="card h-100" routerLink="/project">
-                    <img src="../../../../assets/images/pr3.jpg" class="card-img-top" alt="...">
-   
+                <img src="../../../../assets/images/pr3.jpg" class="card-img-top" alt="...">
+
                 <div class="card-body">
                     <h5 class="card-title mb-3">Card title</h5>
                     <p class="card-text mb-3">This is a longer card with supporting text below as a natural lead-in to
@@ -30,18 +42,18 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+        </div> -->
+        <!-- <div class="col">
             <div class="card h-100" routerLink="/project">
-                    <img src="../../../../assets/images/pr4.jpg" class="card-img-top" alt="...">
-                <!-- https://fakeimg.pl/350x250/B0C7BD/?text=Hello -->
-            
+                <img src="../../../../assets/images/pr4.jpg" class="card-img-top" alt="...">
+              
+
                 <div class="card-body">
                     <h5 class="card-title mb-3">Card title</h5>
                     <p class="card-text mb-3">This is a longer card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

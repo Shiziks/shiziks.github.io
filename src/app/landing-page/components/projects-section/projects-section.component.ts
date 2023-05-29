@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
-import * as projects from './projects.json';
+import projects from './projects.json';
 
 @Component({
   selector: 'app-projects-section',
@@ -10,9 +10,11 @@ import * as projects from './projects.json';
 export class ProjectsSectionComponent implements OnInit {
 
 
+  projs=projects.projects;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.projs);
   }
 
   showProject(){
