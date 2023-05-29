@@ -1,10 +1,10 @@
 <nav class="navbar">
 <div class="container-fluid" [ngClass]="{'project' : !lpVal}">
-    <a class="navbar-brand ms-4" href="#">.M</a>
+    <a class="navbar-brand ms-4" routerLink="/home" [ngClass]="{'homepage':lpVal}">.M</a>
     <div class="navigation">
         <ul class="nav justify-content-between pe-4 pt-4 pb-4">
             <li class="nav-item">
-                <a class="nav-link active" routerLink="/" (click)="scroll('home')">Home</a>
+                <a class="nav-link" routerLink="/" (click)="scroll('home')" [ngClass]="{'active':lpVal}">Home</a>
             </li>
             <li class="nav-item" *ngIf="lpVal">
                 <a class="nav-link" (click)="scroll('projects')">Projects</a>
