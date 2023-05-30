@@ -22,7 +22,7 @@ export class NavBarComponent implements OnInit {
    this.router.events.subscribe((event) => {
    if (event instanceof NavigationEnd) {
     console.log(event.url);
-    event.url=='/project'?this.lpVal=false:this.lpVal=true;
+    event.url.includes('/project/')?this.lpVal=false:this.lpVal=true;
   }
   });
 

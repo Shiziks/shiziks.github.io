@@ -4,7 +4,7 @@
         <div class="project-content my-auto">
             <!-- <h1 class="project-title mt-5">Personal diary - MeLog</h1> -->
             <div class="project-title">
-                <h1 class="title text-center">Portfolio website - M.</h1>
+                <h1 class="title text-center">{{projectData.title}}</h1>
 
                 <!-- <p>
                     A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently
@@ -14,65 +14,86 @@
             </div>
 
             <ul class="project-tech-list">
-                <li>Angular</li>
+                <ng-container *ngFor="let tech of projectData.technologies">
+                    <li>{{tech}}</li>
+                </ng-container>
+                <!-- <li>Angular</li>
                 <li>Php Laravel</li>
-                <li>MySql</li>
+                <li>MySql</li> -->
             </ul>
 
-
-            <!-- <div class="project-links">
-                <a href="" aria-label="project-link" rel="noopener noreferrer" target="_blank">
-                    <i class="fa fa-github" style="font-size:24px"></i>
-                </a>
-                <a href="" aria-label="project-link" rel="noopener noreferrer" target="_blank">
-                    <i class="fa fa-github" style="font-size:24px"></i>
-                </a>
-                
-            </div> -->
         </div>
         <div class="project-image" [ngClass]="{'animate': animate===true}">
-            <a href="https://halcyon-theme.netlify.com/" rel="noopener noreferrer" target="_blank">
-                <!-- <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img"> -->
-                    <!-- <div style="max-width: 700px; display: block;"> -->
-                        <img class="topImage" alt="" role="presentation" aria-hidden="true" src="../../../../assets/images/pr2.jpg"
+            <a href={{projectData.liveDemo}} rel="noopener noreferrer" target="_blank">
+                        <img class="topImage" alt="" role="presentation" aria-hidden="true" 
+                            src={{projectData.img}}
                             style="max-width: 100%; display: block; position: static;">
-                    <!-- </div> -->
-                    <!-- <img aria-hidden="true" data-placeholder-image="" decoding="async"
-                        src="../../../../assets/images/pr2.jpg" alt=""
-                        style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;"> -->
-                <!-- </div> -->
             </a>
         </div>
     </div>
     <!-- /////////////////////////////////////////////////////////////////////////// -->
     <div class="row mt-5  firstDescription mb-5 align-items-center">
-        <h2 class="mt-5">The importance of the project</h2>
-        <p class="firstDescription mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.</p>
+        <h2 class="mt-5">{{projectData.title1}}</h2>
+        <p class="firstDescription mt-3">{{projectData.desc1}}</p>
     </div>
-    <div class="row m-5 d-flex align-items-center">
-        <div class="col-7 mt-5 mb-5">
-            <div class="image1 left">
-                <img alt="" role="presentation" aria-hidden="true" src="../../../../assets/images/pr2.jpg"
-                    style="max-width: 100%; display: block; position: static;">
+    <!-- /////////////////////////////////////////////////////////////////////////// -->
+    <ng-container *ngFor="let proj of projectData.sections; let i=index">
+        <ng-container *ngIf="(i+1)%2!=0; else even">
+            <div class="row m-5 d-flex align-items-center">
+                <div class="col-7 mt-5 mb-5">
+                    <div class="image1 left">
+                        <img alt="" role="presentation" aria-hidden="true" src={{proj.img}}
+                            style="max-width: 100%; display: block; position: static;">
+                    </div>
+                </div>
+                <div class="col-5 mt-5 mb-5">
+                    <div class="title-text">
+                        <h2 class="infotitle text-center">
+                            {{proj.title}}
+                        </h2>
+                    </div>
+                    <div class="text text-justify">
+                       {{proj.desc}}
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-5 mt-5 mb-5 text">
-            <div class="title-text">
-                <h2 class="infotitle">
-                    First Title
-                </h2>
+        </ng-container>
+        <ng-template #even>
+            <div class="row m-5 d-flex align-items-center">
+                <div class="col-5 mt-5 mb-5">
+                    <h2 class="infotitle text-center">
+                        {{proj.title}}
+                    </h2>
+                    <div class="text">
+                        {{proj.desc}}
+                    </div>
+                </div>
+                <div class="col-7 mt-5 mb-5">
+                    <div class="image1 right">
+                        <img alt="" role="presentation" aria-hidden="true" src={{proj.img}}
+                            style="max-width: 100%; display: block; position: static;">
+                    </div>
+                </div>
             </div>
-            <div class="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </div>
-        </div>
-    </div>
+        </ng-template>
+        
+    </ng-container>
+    <div class="project-links text-center mt-3">
+        <div class="col"></div>
+        <a href={{projectData.liveDemo}} aria-label="project-link" rel="noopener noreferrer" target="_blank" class="link ms-4 me-4">
+            <i class="fa fa-eye" style="font-size:2.5em"></i>
+            <p>Live Demo</p>
+        </a>
+        <a href={{projectData.githubLink}} aria-label="project-link" rel="noopener noreferrer" target="_blank" class="link ms-4 me-4">
+            <i class="fa fa-github" style="font-size:2.5em"></i>
+            <p>GitHub</p>
 
-    <div class="row m-5 d-flex align-items-center">
+        </a>
+        <div class="col"></div>
+</div>
+    
+
+    <!-- <div class="row m-5 d-flex align-items-center">
         <div class="col-5 mt-5 mb-5 text">
             <h2 class="infotitle">
                 First Title
@@ -89,9 +110,9 @@
                     style="max-width: 100%; display: block; position: static;">
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="row m-5 d-flex align-items-center">
+    <!-- <div class="row m-5 d-flex align-items-center">
         <div class="col-7 mt-5 mb-5">
             <div class="image1 left">
                 <img alt="" role="presentation" aria-hidden="true" src="../../../../assets/images/pr2.jpg"
@@ -108,24 +129,10 @@
                 ex ea commodo consequat.
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="row m-5 d-flex align-items-center">
+    <!-- <div class="row m-5 d-flex align-items-center">
         <div class="title mt-3 mb-3">
             <h2 class="text-center"> Links to project</h2>
         </div>
-        <div class="project-links text-center mt-3">
-            <div class="col"></div>
-            <a href="" aria-label="project-link" rel="noopener noreferrer" target="_blank" class="link ms-4 me-4">
-                <i class="fa fa-eye" style="font-size:2.5em"></i>
-                <p>Live Demo</p>
-            </a>
-            <a href="" aria-label="project-link" rel="noopener noreferrer" target="_blank" class="link ms-4 me-4">
-                <i class="fa fa-github" style="font-size:2.5em"></i>
-                <p>GitHub</p>
-
-            </a>
-            <div class="col"></div>
-    </div>
-
-</div>
+</div> -->
