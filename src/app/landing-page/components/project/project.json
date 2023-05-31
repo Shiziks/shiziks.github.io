@@ -26,6 +26,34 @@
             ],
             "githubLink": "http://www.github.com",
             "liveDemo": "http://shiziks.github.io"
+        },
+        "oggyportfolio":
+        {
+            
+            "title": "Portfolio website Oggy",
+            "img": "../../../../assets/images/projects/oggyportfolio/oggy1.png",
+            "technologies": [ "angular", "html", "css"],            
+            "title1": "Graphic designer portfolio website",
+            "desc1": "This was the first project I worked on while learning Angular framework. I was inspired to do a personal portfolio presentation because I wanted the experience of making a personal website. All images used for this project are not my own property, but borrowed from the internet.",
+            "sections": [
+                {
+                    "title": "Project section",
+                    "desc": "Section to showcase projects done by me, as well as the projects that are on their way. Each card represents a different project and it is a link to a page that gives more info about the displayed project. To  make the section more suitable for the viewer each odd/even card is colored differently. ",
+                    "img": "../../../../assets/images/projects/oggyportfolio/oggy2.png"
+                },
+                {
+                    "title": "About me section",
+                    "desc": "About me section gives full details about the developer. It is a section that gives a chance to personaly get to know the author a little better. It contains the subsection to showcase all the technologies that the author enjoys learning and using to create applications.",
+                    "img": "../../../../assets/images/projects/oggyportfolio/oggy3.png"
+                },
+                {
+                    "title": "Project page",
+                    "desc": "Project page gives a full description of the selected project. It showcases most of the project sections and describes their use, as well as it provides links to Github repository of the project and live demo links. This page includes mockup images of websites or aplications, as well as full list of technologies used to build it.",
+                    "img": "../../../../assets/images/projects/oggyportfolio/oggy4.png"
+                }
+            ],
+            "githubLink": "https://github.com/Shiziks/Oggy",
+            "liveDemo": "https://oggyportfolio.netlify.app/"
         }
     
 }
