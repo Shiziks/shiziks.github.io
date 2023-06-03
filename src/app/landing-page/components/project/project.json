@@ -39,7 +39,7 @@
                 {
                     "title": "Project section",
                     "desc": "Section to showcase projects done by me, as well as the projects that are on their way. Each card represents a different project and it is a link to a page that gives more info about the displayed project. To  make the section more suitable for the viewer each odd/even card is colored differently. ",
-                    "img": "../../../../assets/images/projects/oggyportfolio/oggy2.png"
+                    "img": "../../../../assets/images/projects/oggyportfolio/oggymobile.png"
                 },
                 {
                     "title": "About me section",
@@ -49,7 +49,7 @@
                 {
                     "title": "Project page",
                     "desc": "Project page gives a full description of the selected project. It showcases most of the project sections and describes their use, as well as it provides links to Github repository of the project and live demo links. This page includes mockup images of websites or aplications, as well as full list of technologies used to build it.",
-                    "img": "../../../../assets/images/projects/oggyportfolio/oggy4.png"
+                    "img": "../../../../assets/images/projects/oggyportfolio/oggy2.png"
                 }
             ],
             "githubLink": "https://github.com/Shiziks/Oggy",
