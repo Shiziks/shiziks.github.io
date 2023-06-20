@@ -31,7 +31,7 @@
         {
             
             "title": "Portfolio website Oggy",
-            "img": "../../../../assets/images/projects/oggyportfolio/oggy1.png",
+            "img": "../../../../assets/images/projects/oggyportfolio/oggytab.png",
             "technologies": [ "angular", "html", "css"],            
             "title1": "Graphic designer portfolio website",
             "desc1": "This was the first project I worked on while learning Angular framework. I was inspired to do a personal portfolio presentation because I wanted the experience of making a personal website. All images used for this project are not my own property, but borrowed from the internet.",
@@ -54,6 +54,66 @@
             ],
             "githubLink": "https://github.com/Shiziks/Oggy",
             "liveDemo": "https://oggyportfolio.netlify.app/"
+        },
+        "pophelanke":
+        {
+            
+            "title": "Pop helanke web shop",
+            "img": "../../../../assets/images/projects/pophelanke/pophelanke1.png",
+            "technologies": [ "php", "javascript", "jquery", "html", "css"],            
+            "title1": "Leggings web shop.",
+            "desc1": "This project was a school project, done as an assignment while learning PHP and implementing JavaScript knowledge. The assignment was to build a website using an existing HTML and CSS theme and implementing Javascript functions as well as communication with Database via PHP. ",
+            "sections": [
+                {
+                    "title": "Index page",
+                    "desc": "Index page is a typical home page for a webshop, showcasing offers, collections and categories to look through. ",
+                    "img": "../../../../assets/images/projects/pophelanke/pophelankeindextablet.jpg"
+                },
+                {
+                    "title": "Shop section",
+                    "desc": "Shop section offers user a possibility to filter the leggings by the category, color or price. Each product can be added to cart, but the cart will be accessible only to logged in users. The items are shown in rows and each time a user decides on the filter new query is made, and the results are used to load new page contents.",
+                    "img": "../../../../assets/images/projects/pophelanke/pophelankeshop.jpg"
+                },
+                {
+                    "title": "Shopping cart",
+                    "desc": "Shopping cart page is accessible only to logged in users. The page gets populated with content once the user has some items placed in the cart. Here user can decide weather to delete some items from the cart or to keep them in the cart. If the user adds more items to the cart, there is a button for updating the cart so all items are updated.",
+                    "img": "../../../../assets/images/projects/pophelanke/pophelankecart.jpg"
+                }
+            ],
+            "githubLink": "https://github.com/Shiziks/Pophelanke",
+            "liveDemo": "https://pophelanke.000webhostapp.com/"
+        },
+        "viaolivia":
+        {
+            
+            "title": "Via Olivia web shop",
+            "img": "../../../../assets/images/projects/viaolivija/viaolivijaindex.jpg",
+            "technologies": [ "angular", "typescript", "html", "css"],            
+            "title1": "Via Olivia shop.",
+            "desc1": "This is a project I am currently working on. It is a webshop for different kinds of food products.",
+            "sections": [
+                {
+                    "title": "Under construction page",
+                    "desc": "This page is not an usual under construction page, but a page to let people know when the shop will be opened and give them an opportunity to subscribe to a newsletter and get notified once the shop is fully functioning or there are any other news. Mailerlite is implemented to be used as a newsletter subscription app.",
+                    "img": "../../../../assets/images/projects/viaolivija/viaoliviasubscribed.jpg"
+                }
+            ],
+            "githubLink": "https://github.com/Shiziks",
+            "liveDemo": "http://viaolivia.rs/"
+        },
+        "stretchingapp":
+        {
+            
+            "title": "Stretching web app",
+            "img": "../../../../assets/images/projects/stretchingapp/stretchingapp.jpg",
+            "technologies": [ "angular", "typescript", "html", "css"],            
+            "title1": "Stretching web app.",
+            "desc1": "This is a project that is still in the planing phase. It will be a web app intended for everyone and anyone who wants to stretch their body. It will have easy step by step guides and follow along tutorials so that everyone is able to use it easily.",
+            "sections": [
+               
+            ],
+            "githubLink": "https://github.com/Shiziks",
+            "liveDemo": "#"
         }
     
 }

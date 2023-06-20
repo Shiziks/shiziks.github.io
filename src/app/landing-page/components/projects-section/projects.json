@@ -1,34 +1,34 @@
 {
     "projects": [
         {
-            "cardTitle": "Portfolio project",
+            "cardTitle": "Personal portfolio project",
             "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
             "cardImage": "../../../../assets/images/projects/portfolio/website.png",
             "link": "/project/portfolio"
         },
         {
-            "cardTitle": "Portfolio project",
+            "cardTitle": "Oggy design portfolio project",
             "cardText": "Portfolio website for graphic designer - Oggy. This website was a project I worked on while learning to code in Angular framework.",
             "cardImage": "../../../../assets/images/projects/oggyportfolio/oggy1.png",
             "link": "/project/oggyportfolio"
         },
         {
-            "cardTitle": "Portfolio project",
-            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
-            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
-            "link": "/project/portfolio"
+            "cardTitle": "Pop helanke web shop",
+            "cardText": "This project was a school project, done as an assignment while learning PHP and implementing JavaScript knowledge.",
+            "cardImage": "../../../../assets/images/projects/pophelanke/pophelanke1.png",
+            "link": "/project/pophelanke"
         },
         {
-            "cardTitle": "Portfolio project",
-            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
-            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
-            "link": "/project/portfolio"
+            "cardTitle": "Via Olivia web shop",
+            "cardText": "This is a project I am currenty working on. A web shop that is under construction.",
+            "cardImage": "../../../../assets/images/projects/viaolivija/viaolivijaindex.jpg",
+            "link": "/project/viaolivia"
         },
         {
-            "cardTitle": "Portfolio project",
-            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.", 
-            "cardImage": "../../../../assets/images/projects/portfolio/Portfolio1.png",
-            "link": "/project/portfolio"
+            "cardTitle": "Stretching web app",
+            "cardText": "This is a project that is currently in the planining phase.", 
+            "cardImage": "../../../../assets/images/projects/stretchingapp/stretchitapp.jpg",
+            "link": "/project/stretchingapp"
         }
     ]
 }
