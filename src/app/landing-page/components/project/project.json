@@ -114,6 +114,34 @@
             ],
             "githubLink": "https://github.com/Shiziks",
             "liveDemo": "#"
+        },
+        "melog":
+        {
+            
+            "title": "Personal diary application - MeLog",
+            "img": "../../../../assets/images/projects/melog/melogscreens.jpg",
+            "technologies": [ "angular","php","html", "css"],            
+            "title1": "A personal diary website",
+            "desc1": "This is my biggest project I made so far. It was a finishing project for the Computer Science batchelor degree. I personly picked the theme because journaling is something I enjoy, and I wanted to make a web app that has the features that I am using and couldn't find in other apps online. ",
+            "sections": [
+                {
+                    "title": "Landing page",
+                    "desc": "Landing page is there to represent the whole project to future users. It is divided in sections, and each section represents one feature of the diary app. Underneath each section there is a hook button for an easy access to register or login page.",
+                    "img": "../../../../assets/images/projects/melog/landingpagegif.gif"
+                },
+                {
+                    "title": "About me section",
+                    "desc": "About me section gives full details about the developer. It is a section that gives a chance to personaly get to know the author a little better. It contains the subsection to showcase all the technologies that the author enjoys learning and using to create applications.",
+                    "img": "../../../../assets/images/projects/melog/profile.gif"
+                },
+                {
+                    "title": "Project page",
+                    "desc": "Project page gives a full description of the selected project. It showcases most of the project sections and describes their use, as well as it provides links to Github repository of the project and live demo links. This page includes mockup images of websites or aplications, as well as full list of technologies used to build it.",
+                    "img": "../../../../assets/images/projects/melog/admin.gif"
+                }
+            ],
+            "githubLink": "https://github.com/Shiziks/Oggy",
+            "liveDemo": "https://oggyportfolio.netlify.app/"
         }
     
 }
