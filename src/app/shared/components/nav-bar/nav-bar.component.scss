@@ -33,6 +33,10 @@ $between-purpleandgreen: #907F9F;
         a.navbar-brand.homepage{
             text-shadow: -1px -1px 0px $container-background, 1px 1px 0px $container-background, 2px 2px 0px rgba(0, 0, 0, 0.3333333333);
         }
+        
+        div#navbarNavAltMarkup {
+            justify-content: end;
+        }
 
         .navigation>ul.nav>li>a {
             color: $h-font-color;

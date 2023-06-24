@@ -1,8 +1,11 @@
-<nav class="navbar">
+<nav class="navbar navbar-expand-md">
 <div class="container-fluid" [ngClass]="{'project' : !lpVal}">
     <a class="navbar-brand ms-4" routerLink="/home" [ngClass]="{'homepage':lpVal}">.M</a>
-    <div class="navigation">
-        <ul class="nav justify-content-between pe-4 pt-4 pb-4">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse navigation" id="navbarNavAltMarkup">
+        <ul class="navbar-nav nav justify-content-between pe-4 pt-4 pb-4">
             <li class="nav-item">
                 <a class="nav-link" routerLink="/" (click)="scroll('home')" [ngClass]="{'active':lpVal}">Home</a>
             </li>
