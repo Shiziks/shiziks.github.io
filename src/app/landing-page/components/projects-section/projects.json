@@ -7,6 +7,12 @@
             "link": "/project/portfolio"
         },
         {
+            "cardTitle": "Melog diary app",
+            "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
+            "cardImage": "../../../../assets/images/projects/melog/chartsmockup.jpg",
+            "link": "/project/melog"
+        },
+        {
             "cardTitle": "Oggy design portfolio project",
             "cardText": "Portfolio website for graphic designer - Oggy. This website was a project I worked on while learning to code in Angular framework.",
             "cardImage": "../../../../assets/images/projects/oggyportfolio/oggy1.png",
