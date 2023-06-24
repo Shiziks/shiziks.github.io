@@ -20,12 +20,23 @@ $between-purpleandgreen: #907F9F;
     width: 100%;
 
     .row {
-        width: 60%;
+        width: 100%;
         margin: 0px auto;
 
-        .col>.footerIcons>.row>.col>fa-icon {
-            font-size: 25px;
+        .column{
+            margin:0px auto;
         }
+        .column>.footerIcons>.row>.col>a>fa-icon {
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+            color:#8EF5D5;
+            &:hover{
+                color:#907F9F;
+            }
+        }
+    
     }
 
 }
