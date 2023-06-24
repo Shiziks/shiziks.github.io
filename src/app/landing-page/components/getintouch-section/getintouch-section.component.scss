@@ -9,7 +9,7 @@ $between-purpleandgreen: #907F9F;
     background-color: $h-font-color;
 
     &>.row {
-        width: 80%;
+        //width: 80%;
         margin: 0px auto;
     }
 
@@ -22,14 +22,14 @@ $between-purpleandgreen: #907F9F;
     }
 
     .row {
-        width: 70%;
+        //width: 70%;
     }
 
     .row.getInTouch {
-        width: 50%;
+        //width: 50%;
     }
 
-    .row>.col>div>span {
+    .row>.col-12>div>span {
         color: $container-background;
         font-size: 18px;
         justify-content: center;
@@ -60,8 +60,12 @@ $between-purpleandgreen: #907F9F;
             font-size: 18px;
         }
     }
+    .row>.col-12>.text{
+        width:70%;
+        margin:1px auto;
+    }
 
-    .row>.col>.btn {
+    .row>.col-12>.btn {
         background-color: $between-purpleandgreen;
         font-family: $font-family;
         text-transform: uppercase;
