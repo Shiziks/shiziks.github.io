@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faHandSparkles } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-intro-section',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroSectionComponent implements OnInit {
 
+  fahand=faHandSparkles;
   constructor() { }
 
   ngOnInit(): void {

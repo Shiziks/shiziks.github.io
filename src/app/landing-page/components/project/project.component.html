@@ -39,7 +39,7 @@
     <!-- /////////////////////////////////////////////////////////////////////////// -->
     <ng-container *ngFor="let proj of projectData.sections; let i=index">
         <ng-container *ngIf="(i+1)%2!=0; else even">
-            <div class="row m-xs-2 m-sm-3 m-md-4 m-lg-5 m-xl-5 m-xxl-5 d-flex align-items-center">
+            <div class="row m-xxs-2 m-xs-2 m-sm-3 m-md-4 m-lg-5 m-xl-5 m-xxl-5 d-flex align-items-center">
                 <div class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 mt-5 mb-5">
                     <div class="image1 left">
                         <img alt="" role="presentation" aria-hidden="true" src={{proj.img}}
@@ -59,7 +59,7 @@
             </div>
         </ng-container>
         <ng-template #even>
-            <div class="row m-xs-2 m-sm-3 m-md-4 m-lg-5 m-xl-5 m-xxl-5 d-flex align-items-center">
+            <div class="row m-xxs-2 m-xs-2 m-sm-3 m-md-4 m-lg-5 m-xl-5 m-xxl-5 d-flex align-items-center">
                 <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 mt-5 mb-5 order-2 order-xs-2 order-sm-2 order-md-1 order-lg-1 order-xl-1">
                     <h2 class="infotitle text-center">
                         {{proj.title}}
@@ -77,6 +77,18 @@
             </div>
         </ng-template>
         
+    </ng-container>
+    <ng-container *ngIf="projectData.video">
+        <div class="row mt-5 mb-5 firstDescription mb-5 align-items-center">
+            <h2 class="mt-5">{{projectData.video.title}}</h2>
+            <p class="firstDescription mt-3 text-center">{{projectData.video.desc}}</p>
+            <div class="text-center videowrap mt-5">
+                <div style="padding:62.5% 0 0 0;position:relative;" class="video text-center">
+                    <iframe src="https://player.vimeo.com/video/839473788?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MeLog diary walkthrough"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
     </ng-container>
     <div class="project-links text-center mt-3">
         <div class="col"></div>

@@ -461,6 +461,14 @@ $between-purpleandgreen: #907F9F;
        
     }
 
+    .videowrap{
+        width: 80%;
+        margin:0px auto;
+        iframe {
+            border-radius: 25px;
+            box-shadow: 0 10px 30px -15px $container-background;
 
+        }
+    }
 
 }

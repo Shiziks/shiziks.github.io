@@ -13,6 +13,13 @@ $between-purpleandgreen: #907F9F;
         margin:0px auto;
     }
 
+    .title{
+        color: $container-background;
+        font-family: $font-family;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+    }
+
     .row>.col:nth-child(even) {
         .card {
             background-color: $container-background;
@@ -87,6 +94,12 @@ $between-purpleandgreen: #907F9F;
                 font-weight: 800;
             }
 
+        }
+    }
+
+    @media screen and (max-width:768px){
+        .row{
+            width:90%;
         }
     }
 }
