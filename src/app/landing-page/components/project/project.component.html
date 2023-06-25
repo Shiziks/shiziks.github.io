@@ -1,7 +1,7 @@
 <div class="container-fluid pt-5 pb-5 project mt-5" #project>
     <div class="row intro mb-5">
 
-        <div class="project-content my-auto">
+        <div class="project-content my-auto col-xxs-12 col-xs-12 col-s-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             <!-- <h1 class="project-title mt-5">Personal diary - MeLog</h1> -->
             <div class="project-title">
                 <h1 class="title text-center">{{projectData.title}}</h1>
@@ -23,7 +23,7 @@
             </ul>
 
         </div>
-        <div class="project-image" [ngClass]="{'animate': animate===true}">
+        <div class="project-image top col-xxs-12 col-xs-12 col-s-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" [ngClass]="{'animate': animate===true}">
             <a href={{projectData.liveDemo}} rel="noopener noreferrer" target="_blank">
                         <img class="topImage" alt="" role="presentation" aria-hidden="true" 
                             src={{projectData.img}}
