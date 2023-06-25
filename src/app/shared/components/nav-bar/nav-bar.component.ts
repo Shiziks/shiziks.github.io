@@ -12,6 +12,7 @@ export class NavBarComponent implements OnInit {
 
   lpVal!:boolean;
   active:string="home";
+  project:boolean=false;
 
   constructor(private router:Router, private scroller: ViewportScroller) {
   }
@@ -23,6 +24,7 @@ export class NavBarComponent implements OnInit {
    if (event instanceof NavigationEnd) {
     console.log(event.url);
     event.url.includes('/project/')?this.lpVal=false:this.lpVal=true;
+    event.url.includes('/project/')?this.project=true:this.project=false;
   }
   });
 

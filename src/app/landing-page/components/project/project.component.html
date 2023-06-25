@@ -1,4 +1,4 @@
-<div class="container-fluid pt-5 pb-5 project mt-5" #project>
+<div class="container-fluid pt-5 pb-5 project mt-xs-2 mt-sm-2 mt-md-3 mt-lg-5 mt-xl-5 mt-xxl-5" #project>
     <div class="row intro mb-5">
 
         <div class="project-content my-auto col-xxs-12 col-xs-12 col-s-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -39,7 +39,7 @@
     <!-- /////////////////////////////////////////////////////////////////////////// -->
     <ng-container *ngFor="let proj of projectData.sections; let i=index">
         <ng-container *ngIf="(i+1)%2!=0; else even">
-            <div class="row m-5 d-flex align-items-center">
+            <div class="row m-xs-2 m-sm-3 m-md-4 m-lg-5 m-xl-5 m-xxl-5 d-flex align-items-center">
                 <div class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 mt-5 mb-5">
                     <div class="image1 left">
                         <img alt="" role="presentation" aria-hidden="true" src={{proj.img}}
@@ -59,7 +59,7 @@
             </div>
         </ng-container>
         <ng-template #even>
-            <div class="row m-5 d-flex align-items-center">
+            <div class="row m-xs-2 m-sm-3 m-md-4 m-lg-5 m-xl-5 m-xxl-5 d-flex align-items-center">
                 <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 mt-5 mb-5 order-2 order-xs-2 order-sm-2 order-md-1 order-lg-1 order-xl-1">
                     <h2 class="infotitle text-center">
                         {{proj.title}}

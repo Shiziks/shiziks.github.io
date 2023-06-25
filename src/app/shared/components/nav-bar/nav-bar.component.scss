@@ -19,6 +19,10 @@ $between-purpleandgreen: #907F9F;
 
     }
 }
+.navbar.project{
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(141,90,151)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
 
 .navbar {
     padding: 0px;
@@ -126,7 +130,19 @@ ul.nav {
                 1px 1px 0px $container-background,
                 2px 2px 0px rgba(0, 0, 0, 0.3333333333);
         }
+
+
        
     }
 
+}
+
+@media screen and (max-width:768px){
+
+     .navigation>ul.nav>li>a::before {
+        content: "";
+        display: none;
+        visibility: hidden;
+
+    }
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md">
+<nav class="navbar navbar-expand-md" [ngClass]="{'project': project}">
 <div class="container-fluid" [ngClass]="{'project' : !lpVal}">
     <a class="navbar-brand ms-4" routerLink="/home" [ngClass]="{'homepage':lpVal}">.M</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,8 +6,8 @@
       </button>
     <div class="collapse navbar-collapse navigation" id="navbarNavAltMarkup">
         <ul class="navbar-nav nav justify-content-between pe-4 pt-4 pb-4 text-end">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/" (click)="scroll('home')" [ngClass]="{'active':lpVal}">Home</a>
+            <li class="nav-item" [ngClass]="{'project':project}">
+                <a class="nav-link" routerLink="/" (click)="scroll('home')" [ngClass]="{'active':lpVal, 'project':project}">Home</a>
             </li>
             <li class="nav-item" *ngIf="lpVal">
                 <a class="nav-link" (click)="scroll('projects')">Projects</a>
