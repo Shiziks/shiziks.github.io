@@ -112,7 +112,7 @@ $between-purpleandgreen: #907F9F;
 
     .row.intro {
         margin: 0px auto;
-        //width: 80%;
+        width: 80%;
         position: relative;
         //display: grid;
         //gap: 10px;
@@ -213,7 +213,7 @@ $between-purpleandgreen: #907F9F;
         .project-image.top{
             left:-3%;
         }
-        .project-image {
+        .project-image> .imagewrapper {
             padding: 0px;
             overflow: hidden;
             border-radius: 1em;
@@ -241,6 +241,7 @@ $between-purpleandgreen: #907F9F;
                 --moz-transition     : all 0.7s linear;
                 --webkit-transition  : all 0.7s linear;
                 z-index: 2;
+                width:100%;
 
                 &:hover {
                     filter: unset;
@@ -281,6 +282,7 @@ $between-purpleandgreen: #907F9F;
         .image1 img {
             z-index: 1;
             transition: transform 1s ease-in-out;
+            width:100%;
 
             &:hover {
                 transform: scale(1.07);

@@ -3,13 +3,13 @@
         {
             "cardTitle": "Personal portfolio project",
             "cardText": "This is my personal portfolio website. A website that in a way represents me, and showcases what I am all about.",
-            "cardImage": "../../../../assets/images/projects/portfolio/website.png",
+            "cardImage": "../../../../assets/images/projects/portfolio/portfoliotab.png",
             "link": "/project/portfolio"
         },
         {
             "cardTitle": "Melog diary app",
             "cardText": "My biggest project so far, personal Diary app. Built to meet the needs of any user, with features that are customizable and can be switched off/on when needed.",
-            "cardImage": "../../../../assets/images/projects/melog/chartsmockup.jpg",
+            "cardImage": "../../../../assets/images/projects/melog/profilemockup.png",
             "link": "/project/melog"
         },
         {
