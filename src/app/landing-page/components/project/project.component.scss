@@ -112,7 +112,7 @@ $between-purpleandgreen: #907F9F;
 
     .row.intro {
         margin: 0px auto;
-        width: 80%;
+        width: 95%;
         position: relative;
         //display: grid;
         //gap: 10px;
@@ -212,8 +212,9 @@ $between-purpleandgreen: #907F9F;
 
         .project-image.top{
             left:-3%;
+            position: relative;
         }
-        .project-image> .imagewrapper {
+        .project-image{
             padding: 0px;
             overflow: hidden;
             border-radius: 1em;

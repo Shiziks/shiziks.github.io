@@ -118,7 +118,7 @@
         "melog":
         {
             
-            "title": "Personal diary application - MeLog",
+            "title": "Diary application - MeLog",
             "img": "../../../../assets/images/projects/melog/melogscreens.jpg",
             "technologies": [ "angular","php","html", "css", "mysql"],            
             "title1": "A personal diary website",
