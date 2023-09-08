@@ -104,16 +104,35 @@
         "stretchingapp":
         {
             
-            "title": "Stretching web app",
-            "img": "../../../../assets/images/projects/stretchingapp/stretchingapp.jpg",
+            "title": "StretchWay web app",
+            "img": "../../../../assets/images/projects/stretchingapp/stretchway.jpeg",
             "technologies": [ "angular", "typescript", "html", "css"],            
-            "title1": "Stretching web app.",
-            "desc1": "This is a project that is still in the planing phase. It will be a web app intended for everyone and anyone who wants to stretch their body. It will have easy step by step guides and follow along tutorials so that everyone is able to use it easily.",
+            "title1": "StretchWay web app.",
+            "desc1": "This is a project that took me around a week to be completely done, with the full design of the page. I made it as a pesonal tool for stretching, so that I am able to more easily follow the routine I usually do after working out.",
             "sections": [
-               
+                {
+                    "title": "Intro screen",
+                    "desc": "Idea behind this app is that it will be mostly used on mobile phones, so the intro screen is made to mimic the loading of mobile app and be a welcoming message for the user. This screen is visible only for 5 seconds and after that the user is redirected to the homepage of the app.",
+                    "img": "../../../../assets/images/projects/stretchingapp/IntroPage.jpg"
+                },
+                {
+                    "title": "Home page",
+                    "desc": "The home page serves as guide for the futher use of the app. On this screen the user can choose which body part they want to stretch in that session or choose to stretch the whole body. Also highlighted in green there is a guide how this stretching approach actually works and should be used. This page is made to be intuitive for the user to easily navigate through it and all the given options.",
+                    "img": "../../../../assets/images/projects/stretchingapp/homePage.jpg"
+                },
+                {
+                    "title": "Stretch page",
+                    "desc": "Once a user selects a part of body they want to stretch a stretch page is shown to them. This page shows the stretch with the name of the stretch underneath and options to start and stop the time right underneath. Each stretch has a description, or ques a user should follow and they are accessible by clicking/taping on the name of the stretch. Once the times starts, the start buttin becomes disabled until the user taps/clicks on the stop button. The timer counts down from 30 seconds to 0 and once it reaches 0 the notification sound activates. This feature is added because my personal experience with the app.",
+                    "img": "../../../../assets/images/projects/stretchingapp/stretchPage.jpg"
+                },
+                {
+                    "title": "Help page",
+                    "desc": "Help page is intended to be used by first time users or users who need more explanation about this stretching approach. It covers all the key questions about the approach and how to properly use an app so that you can see the results. It is devided in sections, and each section covers a different question about the approach or the app itself.",
+                    "img": "../../../../assets/images/projects/stretchingapp/helpPage.jpg"
+                }
             ],
-            "githubLink": "https://github.com/Shiziks",
-            "liveDemo": "#"
+            "githubLink": "https://github.com/Shiziks/stretchway",
+            "liveDemo": "https://stretchway.netlify.app/"
         },
         "melog":
         {
