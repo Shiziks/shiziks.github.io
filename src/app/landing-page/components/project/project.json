@@ -141,7 +141,7 @@
             "img": "../../../../assets/images/projects/melog/melogscreens.jpg",
             "technologies": [ "angular","php","html", "css", "mysql"],            
             "title1": "A personal diary website",
-            "desc1": "This is my biggest project I made so far. It was a finishing project for the Computer Science batchelor degree. I personly picked the theme because journaling is something I enjoy, and I wanted to make a web app that has the features that I am using and couldn't find in other apps online.",
+            "desc1": "This is the biggest project I made so far. It was a final project for the Computer Science batchelor degree and it took me around 6 months to completely design, program and secure the app. I personly picked the theme because journaling is something I enjoy, and I wanted to make a web app that has the features that I am using and couldn't find in other apps online.",
             "sections": [
                 {
                     "title": "Landing page",
@@ -181,7 +181,7 @@
             ],
             "video": {
                 "title": "App video",
-                "desc": "This is an app walktrough video I made with a purpose of presenting my work. Please take time and see all the app features to get a better understanding of app functionalities.",
+                "desc": "This is an app walktrough video I made with a purpose of presenting my work. Please take time and see all the app features to get a better understanding of app functionalities. Under the video you can find links for the Github project as well as the live version of the frontend part of the application.",
                 "video":"https://player.vimeo.com/video/839473788?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             },
             "githubLink": "https://github.com/Shiziks/diaryback",
