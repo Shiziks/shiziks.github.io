@@ -31,8 +31,8 @@
             "link": "/project/viaolivia"
         },
         {
-            "cardTitle": "Stretching web app",
-            "cardText": "This is a project that is currently in the planining phase. Something that I am eager to do in the future.", 
+            "cardTitle": "StretchWay web app",
+            "cardText": "This is a project that I made for a personal use. It is an app for a specific approach to stretching for everyone who wants a more mobile body.", 
             "cardImage": "../../../../assets/images/projects/stretchingapp/stretchway.jpeg",
             "link": "/project/stretchingapp"
         }
