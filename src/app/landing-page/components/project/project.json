@@ -108,7 +108,7 @@
             "img": "../../../../assets/images/projects/stretchingapp/stretchway.jpeg",
             "technologies": [ "angular", "typescript", "html", "css"],            
             "title1": "StretchWay web app.",
-            "desc1": "A project I made for personal use. This is a project that took me around a week to be completely done, with the full design of the page. I made it as a pesonal tool for stretching, so that I am able to more easily follow the routine I usually do after working out.",
+            "desc1": "A project I made for personal use with mobile first approach. This project took me around a week to be completely done, with the full design of the page. I made it as a pesonal tool for stretching, so that I am able to more easily follow the routine I usually do after working out.",
             "sections": [
                 {
                     "title": "Intro screen",
